@@ -25,7 +25,7 @@ def english_to_french(text):
     """
     if text is None:
         return None
-    translation = language_translator.translate(text=text,model_id='en-fr').get_result()    
+    translation = language_translator.translate(text=text,model_id='en-fr').get_result()
     return translation["translations"][0]["translation"]
 
 
